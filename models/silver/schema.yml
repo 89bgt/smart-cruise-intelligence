@@ -10,3 +10,41 @@ models:
         description: "Standardized cruise line name"
       - name: ship_name
         description: "Cleaned ship name"
+      - name: route_name
+        description: "Original route name from source"
+      - name: route_category
+        description: "Standardized route category (caribbean/mediterranean)"
+      - name: sailing_date
+        description: "Date when cruise departs"
+
+  - name: cruise_prices
+    description: "Transactional pricing data for each cruise scraping event"
+    columns:
+      - name: price_id
+        description: "Unique identifier for each price observation"
+      - name: cruise_id
+        description: "Links to the cruise sailing"
+      - name: price_usd
+        description: "Total price in USD"
+      - name: days_to_departure
+        description: "Days remaining until sailing date"
+
+  - name: ships
+    description: "Master data for cruise ships"
+    columns:
+      - name: ship_id
+        description: "Unique identifier for each ship"
+      - name: ship_name
+        description: "Official ship name"
+      - name: cruise_line
+        description: "Operating cruise line"
+
+  - name: routes
+    description: "Master data for cruise routes"
+    columns:
+      - name: route_id
+        description: "Unique identifier for each route"
+      - name: route_name
+        description: "Original route name"
+      - name: route_category
+        description: "Geographic region category"

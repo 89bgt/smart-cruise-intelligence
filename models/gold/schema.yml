@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fact_cruise_pricing
+    description: "Central fact table for cruise pricing analytics"
+    
+  - name: dim_date
+    description: "Date dimension for temporal analysis"
+    
+  - name: dim_routes
+    description: "Route dimension for geographic analysis"
+    
+  - name: dim_cruise_lines
+    description: "Cruise line dimension for brand analysis"
+    
+  - name: dim_ships
+    description: "Ship dimension for vessel analysis"
+    
+  - name: dim_booking_windows
+    description: "Booking timing dimension for pricing strategy analysis"
+    
+  - name: dim_cabin_types
+    description: "Cabin category dimension for accommodation analysis"
