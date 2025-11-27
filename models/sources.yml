@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: "Raw bronze layer data"
+    database: smart-cruise-intelligence
+    schema: cruize_bronze
+    meta:
+      location: 'US'  # ← EXPLICITLY SET LOCATION
+    tables:
+      - name: raw_cruise_prices
+        description: "Raw cruise pricing data from web scraping"
