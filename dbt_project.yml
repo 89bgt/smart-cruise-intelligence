@@ -43,3 +43,7 @@ models:
     silver:
       +schema: cruise_silver  
       +database: smart-cruise-intelligence
+    
+    gold:
+      +schema: cruise_gold  
+      +database: smart-cruise-intelligence
