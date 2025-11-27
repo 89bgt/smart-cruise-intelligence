@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: cruises
+    description: "Cleaned and standardized cruise sailing information"
+    columns:
+      - name: cruise_id
+        description: "Unique identifier for each cruise sailing"
+      - name: cruise_line
+        description: "Standardized cruise line name"
+      - name: ship_name
+        description: "Cleaned ship name"
